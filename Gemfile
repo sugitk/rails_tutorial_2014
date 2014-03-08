@@ -1,8 +1,9 @@
 source 'https://rubygems.org'
-ruby '2.0.0'
+#ruby '2.0.0'
+ruby '2.1.1'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.0.0'
+gem 'rails', '>= 4.0.0'
 
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
@@ -34,7 +35,7 @@ group :doc do
 end
 
 # Use ActiveModel has_secure_password
-gem 'bcrypt-ruby', '~> 3.0.0'
+gem 'bcrypt-ruby', '~> 3.1.0'
 
 # Use unicorn as the app server
 # gem 'unicorn'
@@ -46,7 +47,9 @@ gem 'bcrypt-ruby', '~> 3.0.0'
 # gem 'debugger', group: [:development, :test]
 
 # Bootstrap
-gem 'bootstrap-sass', '>= 2.3.2.0'
+#gem 'bootstrap-sass', '>= 2.3.2.0'
+gem 'bootstrap-sass', '~> 2.3.2.0'
+gem 'bootstrap-will_paginate', '>= 0.0.6'
 
 group :development, :test do
   gem 'rspec-rails', '>= 2.13.1'
@@ -54,6 +57,7 @@ group :development, :test do
   gem 'spork-rails', github: 'sporkrb/spork-rails'
   gem 'guard-spork', '>= 1.5.0'
   gem 'childprocess', '>= 0.3.6'
+  gem 'faker', '>= 1.1.2'
 end
 
 group :test do
